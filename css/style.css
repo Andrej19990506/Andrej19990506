@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+/* -----------------<Heder>----------------- */
+.container{
+    max-width: 1189px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.search-form{
+    border-radius: 10px;
+    margin-left: 70px;
+    background-color: #EEEEEEB5;
+    display: flex;
+    max-width: 620px;
+    height: 49px;
+    flex-grow: 1;
+    position: relative;
+
+}
+.search-input{
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 20px 13px;
+    outline: none;
+   
+}
+.search-input{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color:#57565B;
+}
+:hover.search-input{
+    border: solid 2px #F47322;
+}
+.searche-button{
+ background-color: transparent;
+ border: none;
+ position: absolute;
+ right: 0;
+ top: 0;
+ height: 100%;
+ padding: 13px 26px;
+ cursor: pointer;
+ fill: black ;
+}
+
+.auth{
+    margin-left: auto;
+    background: #EBEBEB;
+    border-radius: 50px;
+    width: 99px;
+    height: 49px;
+    padding: 16px 29px;
+}
+.login{
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+.card{
+    position: relative;
+    width: 49px;
+    height: 49px;
+    background-color: #F66A15;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.counter{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #FFAF19;
+    display: block;
+    color:black;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 8px;
+    line-height: 9px;
+}
+/* -----------------</Hedear>----------------- */
+ /* -----------------<MAIN>------------------ */
+ .button{
+    display: inline-block;
+    border-radius: 25px;
+    width: 245.72px;
+    height: 48.48px;
+    text-decoration: none;
+    padding: 13px 52px;
+ }
+ /* -----------------<Slider>------------------ */
+.slider{
+}
+.slide{
+    min-height: 400px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(.png);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.slide-content{
+    width: 388px;
+    margin-left: 100px;
+}
+.slide-title{
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    margin-bottom: 15px;
+}
+.slide-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.slide-button{
+    background: #F47322;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #fff;   
+}
+.slide-image{
+    background-image: url('../img/Rectangle\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* -----------------</Slider>------------------ */
+/* -----------------Cards-offers----------------- */
+.card-offers{
+    min-height: 380px;
+    color:white;
+    padding: 50px 0px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards{
+    max-width: 570px;
+    min-height: 380px;
+    padding: 36px;
+    border-radius: 20px;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cards-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+}
+.cards-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 168px;
+    margin-top: 21px;
+}
+.cards-prise{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 8px;
+    display: block;
+}
+.delivery-price{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 25px;
+    display: block;
+}
+.cards-button{
+    color: #5F5F61;
+    background-color: white;
+}
+.cards-image{
+    background-image: url('../img/Cards1.png');
+}
+.cards-right{
+    
+    
+}
+
+/* -----------------<Cards-offers>----------------- */
+/* -----------------</MAIN>------------------ */
+
