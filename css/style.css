@@ -1,10 +1,11 @@
-*{
+* {
     box-sizing: border-box;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 /* -----------------<Heder>----------------- */
 .container{
@@ -112,6 +113,14 @@
     text-decoration: none;
     padding: 13px 52px;
  }
+ .isten{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    color: black;
+    margin-bottom: 47px;
+}
  /* -----------------<Slider>------------------ */
 .slider{
 }
@@ -219,5 +228,204 @@
 }
 
 /* -----------------<Cards-offers>----------------- */
+/* -----------------<Delivery>----------------- */
+.delivery-grid{
+    min-height: 393px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 99px;
+}
+.row{
+    max-width: 275px;
+    min-height: 182px;
+    border-radius: 18px;
+    background-color:slategrey;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.delivery-link{
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.grid1{
+    background-image: url('../img/ZOGS.png');
+}
+.grid2{
+    background-image: url('../img/Vagetables.png')
+}
+.grid3{
+    background-image: url('../img/Meats.png')
+}
+.grid4{
+    background-image: url('../img/Birds.png')
+}
+.grid5{
+    background-image: url('../img/Fish.png')
+}
+.grid6{
+    background-image: url('../img/foodbaby.png')
+}
+.grid7{
+    background-image: url('../img/foodparents.png')
+}
+.grid8{
+    background-image: url('../img/foodhappy.png')
+}
+.name-eats{
+    left: 10px;
+    top: 16px;
+    display: inline-block;
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    background-color: slategray;
+}
+.life{
+    color:#49494F;
+    background-color:#D0FD89 ;
+}
+.vgtbls{
+    color: #FFFFFF;
+    background-color:#AEBC41 ;
+}   
+.meat{
+    color:#FFFFFF ;
+    background-color:#B86B78 ;
+}
+.birds{
+    color: #FFFFFF;
+    background-color:#D68334 ;
+}
+.fish{
+    color:#FFFFFF ;
+    background-color:#CD6255;
+}
+.kinder{
+    color:#49494F ;
+    background-color:#FFFDBF;
+}
+.parents{
+    color:#49494F ;
+    background-color: #F6FDC8;
+}
+.happy{
+    color: #49494F;
+    background-color: #FEF7FE;
+}
+/* -----------------</Delivery>----------------- */
+/* -----------------<Categories-Tabs>----------------- */
+#food-categories{
+    max-width: 1440px;
+    min-height: 841px;
+    background-color: #F6F6F6;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.listen-categories{
+    margin: 0px 0px 50px 124px;
+}
+.food-categories-tabs{
+    margin: 0px 0px 50px 124px;
+    max-width: 461px;
+    justify-content: space-between;
+    display: flex;
+}
+.tabs-food{
+    color: #49494F;
+    font-size: 20px;
+    line-height: 23px
+}
+.tabs-food-active{
+    color: #F37321;
+}
+.food-categories-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.food-categories__card{
+    width: 270px;
+    height: 471px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.button-categories{
+    border: 2px solid #F37321;
+    box-sizing: border-box;
+    border-radius: 33px;
+    color: #F37321;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    width: 315px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 68px;
+}
+.food-categories-header{
+    width: 220px;
+    margin: 21px 27px 36px 23px;
+}
+.food-categories-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-bottom: 13px;
+}
+.food-categories-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #B9B9BE;
+}
+.food-categories-footer{
+    margin: 0px 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.food-categories-weight{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #AAAAB1;
+}
+.food-categories-price{
+    color: #4B4B51;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    display: block;
+}
+.food-categories-button{
+    display: block;
+    border: 2px solid #F37321;
+    box-sizing: border-box;
+    border-radius: 33px;
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    padding-top: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F37321;
+}
+
+/* -----------------</Categories-Tabs>----------------- */
 /* -----------------</MAIN>------------------ */
 
