@@ -1,0 +1,522 @@
+@import "globalVariable";
+@import "reset";
+.button {
+  max-width: 315px;
+  padding: 14px 0px;
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+  text-align: center;
+  cursor: pointer;
+}
+.main-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 47px;
+}
+//////////////////////////////////////ШАПКА САЙТА\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.header {
+  &__main-nav {
+    display: flex;
+    align-items: center;
+    margin: 13px 0px 20px 0px;
+  }
+}
+.logo {
+  &__img {
+    width: 128px;
+    margin-right: 76px;
+  }
+}
+.main-nav {
+  &__logo {
+  }
+
+  &__search-form {
+    max-width: 620px;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    min-height: 48px;
+  }
+
+  &__login {
+    max-width: 99px;
+    min-height: 49px;
+    background: #ebebeb;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 12px 29px;
+  }
+
+  &__basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    background-color: #f47322;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 31px;
+  }
+}
+.search-form {
+  &__input {
+    background: rgba(238, 238, 238, 0.71);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 13px 21px;
+  }
+
+  &__botton {
+    position: absolute;
+    right: 18px;
+    bottom: 14px;
+  }
+}
+.login {
+  &__link {
+    text-decoration: none;
+    color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.basket {
+  &__link {
+  }
+
+  &__img {
+  }
+
+  &__counter {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: #ffaf19;
+    border-radius: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+////////////////////////////////////////КОНТЕНТ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.slidebar {
+  &__img {
+    display: flex;
+    background-image: url("../img/Rectangle\ 1.png");
+    min-height: 399px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    background-position: right;
+    @include breakpoint(sm) {
+      display: flex;
+      min-height: 399 px;
+      border-radius: 20 px;
+      -ms-flex-wrap: wrap;
+      background-position: right;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item {
+    max-width: 388px;
+    margin: 76px 0px 0px 104px;
+    @include breakpoint(sm) {
+      display: flex;
+      max-width: 282 px;
+      margin: 76 px 0 px 0 px 0 px;
+      align-items: center;
+      flex-direction: column;
+      margin: 0px 53px;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    @include breakpoint(sm) {
+      text-align: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 39px;
+      line-height: 51px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ffffff;
+    margin-bottom: 32px;
+    @include breakpoint(sm) {
+      text-align: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 26px;
+      color: #ffffff;
+      margin-bottom: 32 px;
+    }
+  }
+
+  &__button {
+    background: #f47322;
+    color: white;
+    max-width: 245px;
+    @include breakpoint(sm) {
+      width: 100%;
+    }
+  }
+
+  &__button-link {
+    color: white;
+    text-decoration: none;
+  }
+}
+.cards-offers {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 113px;
+  }
+}
+.card-offers:nth-of-type(2) {
+  margin-left: 54px;
+  background-image: url("../img/Cards2.png");
+  background-position: right;
+}
+.card-offers {
+  flex: 50%;
+  background-image: url("../img/Cards1.png");
+  width: 100%;
+  min-height: 380px;
+  display: flex;
+  background-position: right;
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 232px;
+    margin: 32px 0px 25px 36px;
+  }
+
+  &__button {
+    background: #ffffff;
+    border-radius: 50px;
+    max-width: 232px;
+    border: none;
+  }
+
+  &__button-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #5f5f61;
+    text-decoration: none;
+  }
+}
+.item-info {
+  &__subtitle {
+    margin-bottom: 21px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+
+  &__discription {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+    color: #ffffff;
+    margin-bottom: auto;
+  }
+
+  &__current-price {
+    margin-bottom: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+
+  &__delivery-price {
+    margin-bottom: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+}
+.delivery {
+  margin-bottom: 100px;
+  &__delivery-cards {
+    display: flex;
+    min-height: 363px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+} //////////////// Обратить внимания!!!!!!!!!!!!!!
+.delivery-cards {
+  &__card:nth-of-type(1) .card__name-card {
+    background: #d0fd89;
+    a {
+      color: #49494f;
+      text-transform: uppercase;
+    }
+  }
+
+  &__card:nth-of-type(2) .card__name-card {
+    background: #aebc41;
+    a {
+      color: white;
+    }
+  }
+  &__card:nth-of-type(3) .card__name-card {
+    background: #b86b78;
+    a {
+      color: white;
+    }
+  }
+  &__card:nth-of-type(4) .card__name-card {
+    background: #d68334;
+    a {
+      color: white;
+    }
+  }
+  &__card:nth-of-type(5) .card__name-card {
+    background: #cd6255;
+    a {
+      color: white;
+    }
+  }
+  &__card:nth-of-type(6) .card__name-card {
+    background: #fffdbf;
+    a {
+      color: #49494f;
+    }
+  }
+  &__card:nth-of-type(7) .card__name-card {
+    background: #f6fdc8;
+    a {
+      color: #49494f;
+    }
+  }
+  &__card:nth-of-type(8) .card__name-card {
+    background: #fef7fe;
+    a {
+      color: #49494f;
+    }
+  }
+  &__card {
+    max-width: 275px;
+    min-height: 182px;
+    position: relative;
+    flex: 50%;
+    margin-bottom: 28px;
+  }
+} /////////////// Обратить внимания!!!!!!!!!!!!!!
+.card {
+  &__name-card {
+    padding: 6px 10px 0px 10px;
+    max-width: 147px;
+    min-height: 33px;
+    border-radius: 30px;
+    position: absolute;
+    left: 21px;
+    top: 17px;
+  }
+
+  &__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+  }
+}
+.food-categories {
+  &__theame {
+    background-color: #f6f6f6;
+    margin-bottom: 100px;
+  }
+
+  &__nav {
+    margin-bottom: 62px;
+    max-width: 461px;
+  }
+
+  &__food-categories-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 62px;
+  }
+  &__main-subtitle {
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+  &__button {
+    margin-bottom: 60px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.food-categories-nav {
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-item--active {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #f37321;
+  }
+
+  &__list-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494f;
+    cursor: pointer;
+  }
+}
+
+.food-categories-cards {
+  &__food-categories-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 270px;
+    min-height: 471px;
+    background: #ffffff;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+}
+.food-categories-card {
+  &__img {
+  }
+
+  &__info {
+    margin: 21px 27px auto 23px;
+    max-width: 220px;
+  }
+
+  &__price {
+    margin: 0px 0px 23px 21px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    width: 125px;
+    position: absolute;
+    right: 24px;
+    bottom: 21px;
+  }
+}
+.info {
+  &__title {
+    margin-bottom: 13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+  }
+
+  &__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #b9b9be;
+  }
+}
+.price-current {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+}
+.price-weigt {
+  margin-top: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+.button {
+  &__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f37321;
+    text-decoration: none;
+  }
+}
