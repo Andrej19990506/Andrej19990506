@@ -30,16 +30,21 @@
     align-items: center;
     margin: 13px 0px 20px 0px;
     flex-wrap: wrap;
+    @include breakpoint(sm) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 }
 .logo {
   &__img {
-    width: 128px;
+    width: 100%;
     margin-right: 76px;
   }
 }
 .main-nav {
   &__logo {
+    max-width: 128px;
   }
 
   &__search-form {
@@ -49,9 +54,11 @@
     position: relative;
     display: flex;
     min-height: 48px;
+    margin-left: 75px;
     @include breakpoint(sm) {
       order: 1;
       margin-top: 15px;
+      margin-left: 0px;
     }
   }
 
@@ -62,6 +69,10 @@
     border-radius: 50px;
     text-decoration: none;
     padding: 12px 29px;
+    margin-left: 40px;
+    @include breakpoint(sm) {
+      margin-left: 40px;
+    }
   }
 
   &__basket {
@@ -74,6 +85,9 @@
     border-radius: 50%;
     position: relative;
     margin-left: 31px;
+    @include breakpoint(sm) {
+      margin-left: 0px;
+    }
   }
 }
 .search-form {
