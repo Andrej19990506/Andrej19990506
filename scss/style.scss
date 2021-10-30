@@ -29,6 +29,7 @@
     display: flex;
     align-items: center;
     margin: 13px 0px 20px 0px;
+    flex-wrap: wrap;
   }
 }
 .logo {
@@ -48,6 +49,10 @@
     position: relative;
     display: flex;
     min-height: 48px;
+    @include breakpoint(sm) {
+      order: 1;
+      margin-top: 15px;
+    }
   }
 
   &__login {

@@ -10,7 +10,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
@@ -105,9 +105,11 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 13px 0px 20px 0px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .logo__img {
@@ -126,6 +128,15 @@ select {
   min-height: 48px;
 }
 
+@media (max-width: 480px) {
+  .main-nav__search-form {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-top: 15px;
+  }
+}
+
 .main-nav__login {
   max-width: 99px;
   min-height: 49px;
@@ -140,11 +151,11 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 49px;
   height: 49px;
   background-color: #f47322;
@@ -195,11 +206,11 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slidebar__img {
@@ -210,7 +221,7 @@ select {
   min-height: 399px;
   border-radius: 20px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-position: right;
 }
 
@@ -224,8 +235,8 @@ select {
     -ms-flex-wrap: wrap;
     background-position: right;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 }
 
@@ -242,16 +253,16 @@ select {
     max-width: 282 px;
     margin: 76 px 0 px 0 px 0 px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 0px 53px;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 }
 
@@ -323,8 +334,8 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 113px;
 }
@@ -337,8 +348,8 @@ select {
 
 .card-offers {
   -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
   background-image: url("../img/Cards1.png");
   width: 100%;
   min-height: 380px;
@@ -354,8 +365,8 @@ select {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   max-width: 232px;
   margin: 32px 0px 25px 36px;
 }
@@ -426,10 +437,10 @@ select {
   display: flex;
   min-height: 363px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .delivery-cards__card:nth-of-type(1) .card__name-card {
@@ -502,8 +513,8 @@ select {
   min-height: 182px;
   position: relative;
   -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
   margin-bottom: 28px;
 }
 
@@ -541,10 +552,10 @@ select {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 62px;
 }
 
@@ -565,8 +576,8 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .food-categories-nav__list-item--active {
@@ -594,14 +605,14 @@ select {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: relative;
   max-width: 270px;
   min-height: 471px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 
@@ -617,8 +628,8 @@ select {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .food-categories-card__button {
