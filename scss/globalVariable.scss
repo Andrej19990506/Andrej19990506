@@ -3,9 +3,12 @@
   max-width: 1190px;
   padding: 0px 15px;
 }
-
 @mixin breakpoint($point) {
-  @if $point == sm {
+  @if $point == lm {
+    @media (max-width: 780px) {
+      @content;
+    }
+  } @else if $point == sm {
     @media (max-width: 480px) {
       @content;
     }

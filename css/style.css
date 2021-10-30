@@ -131,6 +131,12 @@ select {
   max-width: 128px;
 }
 
+@media (max-width: 780px) {
+  .main-nav__logo {
+    margin-right: auto;
+  }
+}
+
 .main-nav__search-form {
   max-width: 620px;
   margin-right: auto;
@@ -150,6 +156,17 @@ select {
             order: 1;
     margin-top: 15px;
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 780px) {
+  .main-nav__search-form {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 15px;
+    margin-left: 0px;
+    max-width: 820px;
   }
 }
 
@@ -189,7 +206,7 @@ select {
 
 @media (max-width: 480px) {
   .main-nav__basket {
-    margin-left: 0px;
+    margin-left: 15px;
   }
 }
 
@@ -369,10 +386,42 @@ select {
   margin-bottom: 113px;
 }
 
+@media (max-width: 480px) {
+  .cards-offers__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 780px) {
+  .cards-offers__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .card-offers:nth-of-type(2) {
   margin-left: 54px;
   background-image: url("../img/Cards2.png");
   background-position: right;
+}
+
+@media (max-width: 780px) {
+  .card-offers:nth-of-type(2) {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-offers:nth-of-type(2) {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
 }
 
 .card-offers {
@@ -386,6 +435,8 @@ select {
   display: -ms-flexbox;
   display: flex;
   background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-offers__item-info {
