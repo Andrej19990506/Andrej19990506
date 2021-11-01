@@ -100,6 +100,18 @@ select {
   margin-bottom: 47px;
 }
 
+@media (max-width: 480px) {
+  .main-subtitle {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+.theame {
+  background-color: #f6f6f6;
+}
+
 .header__main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,12 +120,17 @@ select {
       -ms-flex-align: center;
           align-items: center;
   margin: 13px 0px 20px 0px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+@media (max-width: 780px) {
+  .header__main-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 480px) {
-  .header__main-nav {
+  .header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -196,7 +213,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 49px;
+  min-width: 49px;
   height: 49px;
   background-color: #f47322;
   border-radius: 50%;
@@ -515,12 +532,9 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 363px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 15px;
 }
 
 .delivery-cards__card:nth-of-type(1) .card__name-card {
@@ -589,13 +603,15 @@ select {
 }
 
 .delivery-cards__card {
-  max-width: 275px;
-  min-height: 182px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   position: relative;
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  margin-bottom: 28px;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
 }
 
 .card__name-card {
@@ -617,8 +633,7 @@ select {
   text-decoration: none;
 }
 
-.food-categories__theame {
-  background-color: #f6f6f6;
+.food-categories {
   margin-bottom: 100px;
 }
 
@@ -633,9 +648,10 @@ select {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
   margin-bottom: 62px;
 }
 
@@ -648,7 +664,6 @@ select {
   margin-bottom: 60px;
   display: inline-block;
   width: 100%;
-  text-align: center;
 }
 
 .food-categories-nav__lists {
@@ -658,6 +673,16 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .food-categories-nav__lists {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .food-categories-nav__list-item--active {
@@ -766,3 +791,147 @@ select {
   color: #f37321;
   text-decoration: none;
 }
+
+.benefits {
+  margin-bottom: 202px;
+}
+
+.benefits__benefits-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.benefits-item__benefits-card {
+  max-width: 270px;
+  padding: 30px 24px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+
+.benefits-card__img {
+  display: block;
+  max-width: 60px;
+  margin: auto;
+  min-height: 59px;
+}
+
+.benefits-card__info {
+  margin-top: 36px;
+}
+
+.benefits-card__info-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+
+.benefits-card__info-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #49494f;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px 0px;
+}
+
+@media (max-width: 480px) {
+  .footer__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.footer__contacts {
+  margin-right: auto;
+  max-width: 305px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+@media (max-width: 480px) {
+  .footer__contacts {
+    margin: 0px;
+  }
+}
+
+.logo__img {
+  width: 205px;
+}
+
+@media (max-width: 480px) {
+  .logo__img {
+    margin: 0px;
+    width: 150px;
+  }
+}
+
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-item__social {
+  max-width: 124px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+}
+
+@media (max-width: 480px) {
+  .footer-item__social {
+    margin: 0px;
+  }
+}
+
+.list__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

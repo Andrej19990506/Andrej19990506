@@ -22,20 +22,32 @@
   line-height: 23px;
   color: #000000;
   margin-bottom: 47px;
+  @include breakpoint(sm) {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
 }
+.theame {
+  background-color: #f6f6f6;
+}
+
 //////////////////////////////////////ШАПКА САЙТА\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 .header {
   &__main-nav {
     display: flex;
     align-items: center;
     margin: 13px 0px 20px 0px;
-    flex-wrap: wrap;
-    @include breakpoint(sm) {
-      justify-content: space-between;
+    @include breakpoint(lm) {
       flex-wrap: wrap;
     }
   }
+  @include breakpoint(sm) {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
+
 .logo {
   &__img {
     width: 100%;
@@ -88,7 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 49px;
+    min-width: 49px;
     height: 49px;
     background-color: #f47322;
     border-radius: 50%;
@@ -345,9 +357,8 @@
   margin-bottom: 100px;
   &__delivery-cards {
     display: flex;
-    min-height: 363px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 15px;
   }
 } //////////////// Обратить внимания!!!!!!!!!!!!!!
 .delivery-cards {
@@ -402,14 +413,15 @@
     }
   }
   &__card {
-    max-width: 275px;
-    min-height: 182px;
+    flex: 1 0 auto;
     position: relative;
-    flex: 50%;
-    margin-bottom: 28px;
   }
 } /////////////// Обратить внимания!!!!!!!!!!!!!!
 .card {
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
   &__name-card {
     padding: 6px 10px 0px 10px;
     max-width: 147px;
@@ -430,11 +442,9 @@
   }
 }
 .food-categories {
-  &__theame {
-    background-color: #f6f6f6;
-    margin-bottom: 100px;
-  }
-
+  margin-bottom: 100px;
+}
+.food-categories {
   &__nav {
     margin-bottom: 62px;
     max-width: 461px;
@@ -443,7 +453,8 @@
   &__food-categories-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
     margin-bottom: 62px;
   }
   &__main-subtitle {
@@ -455,13 +466,16 @@
     margin-bottom: 60px;
     display: inline-block;
     width: 100%;
-    text-align: center;
   }
 }
 .food-categories-nav {
   &__lists {
     display: flex;
     justify-content: space-between;
+    @include breakpoint(sm) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__list-item--active {
@@ -564,5 +578,156 @@
     line-height: 19px;
     color: #f37321;
     text-decoration: none;
+  }
+}
+
+.benefits {
+  margin-bottom: 202px;
+}
+.benefits {
+  &__benefits-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.benefits-item {
+  // .benefits-item__benefits-card
+
+  &__benefits-card {
+    max-width: 270px;
+    padding: 30px 24px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+  }
+}
+.benefits-card {
+  // .benefits-card__img
+
+  &__img {
+    display: block;
+    max-width: 60px;
+    margin: auto;
+    min-height: 59px;
+  }
+
+  // .benefits-card__info
+
+  &__info {
+    margin-top: 36px;
+  }
+
+  // .benefits-card__info-title
+
+  &__info-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+    margin-bottom: 13px;
+    display: inline-block;
+  }
+
+  &__info-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #49494f;
+  }
+}
+
+.footer {
+  // .footer__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 45px 0px;
+    @include breakpoint(sm) {
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+  }
+
+  // .footer__contacts
+
+  &__contacts {
+    margin-right: auto;
+    max-width: 305px;
+    width: 100%;
+    margin-left: 30px;
+    @include breakpoint(sm) {
+      margin: 0px;
+    }
+  }
+}
+
+.logo {
+  // .logo__link
+
+  &__link {
+  }
+
+  // .logo__img
+
+  &__img {
+    width: 205px;
+    @include breakpoint(sm) {
+      margin: 0px;
+      width: 150px;
+    }
+  }
+}
+.contacts {
+  // .contacts__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .contacts__list-item
+
+  &__list-item {
+  }
+}
+.footer-item {
+  // .footer-item__social
+
+  &__social {
+    max-width: 124px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    @include breakpoint(sm) {
+      margin: 0px;
+    }
+  }
+}
+
+.list {
+  &__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: black;
   }
 }
