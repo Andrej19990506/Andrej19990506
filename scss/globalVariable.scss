@@ -9,7 +9,7 @@
       @content;
     }
   } @else if $point == sm {
-    @media (max-width: 480px) {
+    @media (max-width: 520px) {
       @content;
     }
   }
